@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Texto</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <style>
+        /* ... */
+        * {
+            margin: 0;
+        }
+
+        html{
+            font-size: 20px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Valores padrões */
+        p{
+            font-size: 1em;
+            font-size: 100%;
+            font-size: 16px;
+            
+            /* Valores relativas */
+            font-size: 2.2em;       /* Multiplicando por 2,2 */
+            font-size: 2.2rem;       /* Multiplicando por 2,2 */
+
+
+            font-family: 'Indie Flower';
+            
+            font-weight: 700;
+
+            line-height: 2.5em;     /* Espaçamento entre as linhas */
+        }
+
+        .botao{
+            font-size: 28px;
+            text-decoration: none;      /* Deixando em none ele tira a link abaixo do link */
+            padding: 10px 25px;
+        }
+
+        .destaque{
+            color: white;
+            background-color: tomato;
+            box-shadow: 2px 2px 1px 1px black;
+        }
+        
+        .destaque:active{
+            box-shadow: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            Que texto
+            <br>legal!!!
+        </p>
+    </div>
+    <a href="http://google.com" class="botao destaque">Google</a>
+</body>
+
+</html>

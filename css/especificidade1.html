@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Especificidade CSS</title>
+    <style>
+        /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+
+        
+        .observacao{
+            background-color: blueviolet;
+        }
+
+        p{
+            background-color: #aaa;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        p.observacao{
+            background-color: red;
+            text-align: right;
+        }
+
+        /* Ou seja, a Class tem prioridade*/
+
+    </style>
+</head>
+
+<body>
+    <p class='observacao'>Olha essa observação!!!!</p>
+</body>
+
+</html>
